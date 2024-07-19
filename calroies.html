@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Calories</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: grey;
+        }
+
+        label {
+            display: block;
+            margin: 2rem 0;
+            color: white;
+        }
+
+        input,
+        textarea,
+        select {
+            margin: 10px 0 0 0;
+            width: 250px;
+            min-height: 2em;
+        }
+        .input_area {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action=''>
+        <fieldset>
+            <label for="meal_time">Meal:
+                <div class="input_area"></div>
+                <select id="meal_time" name="meal_time">
+                    <option value="">(select one)</option>
+                    <option value="1">Breakfast</option>
+                    <option value="2">Lunch</option>
+                    <option value="3">Dinner</option>
+                    <option value="4">Snack</option>
+                </select>
+                </div>
+            </label>
+            <label for="first-name">Food Name:
+                <div class="input_area"><input id="food" name="food" type="text" required /></div>
+            </label>
+            <label for="calories">Calories:
+                <div class="input_area"></div><input id="calories" name="calories" type="number" required /></div>
+            </label>
+            <label for="protein">Protein (g):
+                <div class="input_area"></div><input id="protein" name="protein" type="number" required /></div>
+            </label>
+        </fieldset>
+
+    <button>Submit</button>
+    <p>Enter current data for the day here</p>
+</body>
+</html>

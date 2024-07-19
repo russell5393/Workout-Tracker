@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background-color: grey;
+}
+
+.button {
+    background-color: rgb(67, 156, 215);
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 40px;
+    font-size: 20px;
+}
