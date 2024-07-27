@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <style>
+      input, select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border-color: black;
+      }
+      .title {
+        text-align: center;
+      }
+      #submit-button {
+        background-color: rgb(67, 156, 215);
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-size: 18px;
+        color: black;
+        border-color: black;
+        margin-top: 15px;
+      }
+      .control{
+        text-align: center;
+      }
+      body {
+        background-color: grey;
+      }
+    </style>
   </head>
   <body>
-    <section class="hero is-primary is-bold">
-      <div class="hero-body">
+    <section class="Title is-primary is-bold">
+      <div class="Title-body">
         <div class="container">
-          <h1 class="title">Calorie Tracker</h1>
+          <h1 class="title"><a href="index.html" style="text-decoration: none; color: black;">Calorie Tracker</a></h1>
         </div>
       </div>
     </section>
@@ -31,19 +58,6 @@
             </select>
         </div>
       </div>
-
-      <!-- <div class="field">
-        <label class="label">Last Name</label>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            placeholder="Your Last Name"
-            name="Last Name"
-          />
-        </div>
-      </div> -->
-
       <div class="field">
         <label class="label">Food</label>
         <div class="control">
@@ -55,7 +69,6 @@
           />
         </div>
       </div>
-
       <div class="field">
         <label class="label">Calories</label>
         <div class="control">
@@ -67,7 +80,6 @@
           />
         </div>
       </div>
-
       <div class="field">
         <label class="label">Protein</label>
         <div class="control">
@@ -79,48 +91,9 @@
           />
         </div>
       </div>
-<!--
-      <div class="field">
-        <label class="label">Gender</label>
-        <div class="control">
-          <label class="radio">
-            <input type="radio" name="Gender" value="male" /> Male
-          </label>
-          <label class="radio">
-            <input type="radio" name="Gender" value="female" /> Female
-          </label>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Agree to Terms</label>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox" name="Agree To Terms" value="yes" /> I agree
-            to the terms and conditions
-          </label>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Additional Information</label>
-        <div class="control">
-          <textarea
-            class="textarea"
-            placeholder="Any additional information"
-            name="Notes"
-          ></textarea>
-        </div>
-      </div>
--->
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-primary" type="submit" id="submit-button">
-            Submit
-          </button>
-        </div>
-        <div class="control">
-          <button class="button is-danger">Cancel</button>
+          <button class="button is-primary" type="submit" id="submit-button">Submit</button>
         </div>
       </div>
     </form>
@@ -137,9 +110,6 @@
         border-color: aquamarine;
       "
     ></div>
-    <div style="text-align: center;">
-        <a href="index.html">Back</a>
-    </div>
 
     <script>
       document.getElementById("form").addEventListener("submit", function (e) {
